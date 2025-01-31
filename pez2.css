@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/*---------全体---------*/
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%;
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+li {
+    color: black;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+/*----------HEADER----------*/
+
+.flexb {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 5%;
+    font-family: 'CooperBlack', serif;
+}
+#title a{
+    font-size: 2rem;
+    color: blue;
+    border: none;
+}
+/*img {
+    height: 3rem;
+    border-radius: 50%;
+}*/
+.flexe a {
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid black; 
+    margin: 0 10px 0 10px;
+}
+.flexe {
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    line-height: 10px;
+}
+
+#title img {
+    height: 2.2rem;
+    margin-right: 5px;
+}
+
+#title .blue {
+    color: blue;
+}
+.nav-menu {
+    display: none;
+    list-style: none;
+    margin: 0 auto;
+    padding-bottom: 3%;
+    align-items: center;
+}
+.nav-menu li {
+    font-weight: 400;
+    font-size: larger;
+    border-bottom: black;
+}
+.nav-menu a {
+    color: black;
+}
+.nav-menu.open {
+    display: flex;
+    text-decoration: none;
+    color: black;    
+}
+
+
+.menu-button {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 12px 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+a:hover,
+a:focus {
+    color: blue;
+    border-color: blue;
+}
+
+/*----------MAIN----------*/
+
+#top {
+    background-image: url(img/kapibara.jpg);
+    background-size: cover;
+    padding: 20%;
+    background-color: pink;
+    position: fixed;
+}
+#top h1 {
+    font-size: 300%;
+    text-align: center;
+}
+#sub{
+    text-align: center;
+    margin: 8% 0 3% 0;
+}
+#mission p {
+    text-align: center;
+}
+.large {
+    font-size: 200%;
+}
+#leda {
+    margin: 0 10%;
+}
+#leda p {
+    text-align: center;
+    font-size: 100%;
+    width: 50%;
+    letter-spacing: 0.3rem;
+}
+.flex {
+    display: flex;   
+
+}
+#leda img,#leda p {
+    margin: auto;
+}
+#leda img {
+    width: auto;
+    height: 50vh;
+}
+#acui img {
+    border-radius: 50%;
+}
+h3 {
+    text-align: center;
+}
+#procesar {
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5% 10% 50px;
+}
+.item {
+    margin: auto;
+}
+.item img {
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    display: block;
+}
+.item p {
+    text-align: center;
+}
+
+
+
+.under p {
+    text-align: center
+}
+#contacto {
+    text-align: center;
+}
+#contacto input {
+    width: auto;
+    height: 3vh;
+}
+#contacto textarea {
+    height: 10vh;
+}
+
+
+/*-------------*/
+@media (max-width: 750px) {
+    body {
+        margin-left: 0;
+    }
+
+    #title {
+        margin: 0 0 1%;
+        gap: 0;
+        
+    }
+
+    #title a {
+        font-size: 1.6rem;
+    }
+
+    .nav-menu {
+        width: 50%;
+        margin-left: auto;
+        margin-right: 1%;
+    }
+    #top {
+        background-image: url(img/kapibara.jpg);
+        background-size: cover;
+        height: 90vh;
+        padding: 5%;
+    }
+#top h1 {
+        margin-top: 25%;
+    }
+
+
+    .flexb {
+        align-items: flex-start;
+    }
+
+    .nav-menu.open {
+        display: block;
+        height: 100vh;
+        width: auto;
+    }
+    .flexe {
+        margin: 0 0;
+        display: block;
+        flex-direction: column;
+        text-align: right;
+        width: 95%;
+    }
+    
+    
+    .nav-menu li {
+        margin: 10vh 0;
+    }
+
+    /*--------------BODY---------------*/
+
+    #mission {
+       margin: 3% 5% 0 5%;
+    }
+
+    #leda .flex {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+    #leda img {
+        margin-top: 3%;
+    }
+    #leda p {
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    #procesar {
+        display: block;
+    }
+    .item {
+        margin-top: 10%;
+    }
+    #acui img {
+        border-radius: inherit;
+    }
+
+    #pro {
+        margin: 0 5%;
+    }
+}
