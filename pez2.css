@@ -169,6 +169,10 @@ h3 {
 #pro h2 {
     text-align: center;
 }
+#pro p {
+    text-alig: center;
+    background-color: blue;
+}
 
 .under p {
     text-align: center
